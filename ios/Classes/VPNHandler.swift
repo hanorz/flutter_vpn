@@ -105,7 +105,7 @@ class VpnService {
             } else {
                 let p = NEVPNProtocolIKEv2()
                 p.username = username
-                p.remoteIdentifier = server
+                p.remoteIdentifier = "n1.fairyvpn.com"
                 p.serverAddress = server
 
                 p.passwordReference = self.kcs.load(key: passwordKey)
